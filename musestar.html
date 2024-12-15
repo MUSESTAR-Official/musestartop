@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- Clarity tracking code for https://musestar.cc/ -->
+    <script>
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "fvlvixulu7");
+    </script>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缪斯星官方ฅ^≧ω≦^ฅ𝐌𝐔𝐒𝐄𝐒𝐓𝐀𝐑</title>
+    <meta name="keywords" content="高清,下载,缪斯星,MUSESTAR,番剧,电影,在线观看,电视剧,剧集">
+    <meta name="description" content="𝐌𝐔𝐒𝐄𝐒𝐓𝐀𝐑缪斯星正在持续收集动漫番剧、电影、剧集等，给您免费播放网站中的最好体验！ฅ^≧ω≦^ฅ">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-image: url('https://api.anosu.top/api/?sort=all');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 30vh;
+        }
+
+        .logo {
+            font-size: clamp(2em, 5vw, 2.8em);
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .logo::before,
+        .logo::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120%;
+            height: 3px;
+            background-color: #fff;
+        }
+
+        .logo::before {
+            top: -10px;
+        }
+
+        .logo::after {
+            bottom: -10px;
+        }
+
+        .container {
+            background-color: rgba(44, 44, 46, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        h1,
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            margin: 10px 0;
+        }
+
+        .timeline {
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: thin;
+            scrollbar-color: #FF9F55 rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item {
+            display: inline-block;
+            padding: 5px;
+            position: relative;
+            background-color: inherit;
+            width: 250px;
+            vertical-align: top;
+        }
+
+        .content {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            position: relative;
+            border-radius: 6px;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 90px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .content p {
+            margin: 0;
+            font-size: 0.9em;
+            line-height: 1.4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+
+        .zanzhudashang-area {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .zanzhudashang-item {
+            text-align: center;
+            margin: 10px;
+            width: calc(33.33% - 20px);
+            min-width: 250px;
+        }
+
+        .zanzhudashang-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .zanzhudashang-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .zanzhudashang-item p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .option-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+        }
+
+        .option-btn:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .vertical-divider {
+            width: 1px;
+            height: 16px;
+            background-color: #808080;
+            margin: 0 8px;
+            display: none;
+        }
+
+        .highlight {
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+            background-size: 20px 20px;
+            animation: move 1s linear infinite;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .footer img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0 25px;
+        }
+
+        .divider-line {
+            width: 15px;
+            height: 1px;
+            background-color: #808080;
+        }
+
+        .divider-inner {
+            width: 15px;
+            height: 1px;
+            background-color: #ffffff;
+            margin: 0 5px;
+        }
+
+        a {
+            color: #ebebf5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ebebf5;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 30vh;
+            }
+
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .timeline-item {
+                width: 200px;
+            }
+
+            .zanzhudashang-item {
+                width: calc(50% - 20px);
+                min-width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .zanzhudashang-item {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .vertical-divider {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body:before {
+                content: "";
+                position: fixed;
+                z-index: -1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: inherit;
+                -webkit-background-size: cover !important;
+                -o-background-size: cover;
+                background-position: center;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ffffff;
+            border-radius: 0;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e0e0e0;
+        }
+
+        .cardMain.svelte.svelte {
+            width: 190px;
+            height: 340px;
+            display: inline-block;
+            margin: 0 10px 20px 10px;
+        }
+
+        .super.svelte {
+            user-select: none !important;
+            perspective: 800px;
+            display: inline-block
+        }
+
+        .mBox.svelte {
+            overflow: hidden;
+            height: 280px;
+            width: 190px;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+
+        .mTit.svelte.svelte {
+            height: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .mTit.svelte .theTitle.svelte:link {
+            font-size: 16px;
+            line-height: 18px;
+            color: #fff;
+            text-decoration: none;
+            transition: color .2s
+        }
+
+        .mTit.svelte .theTitle.svelte:visited {
+            color: #fff
+        }
+
+        .mTit.svelte .theTitle.svelte:hover {
+            color: #2785bd
+        }
+
+        .mTit.svelte .theTitle.svelte:active {
+            color: #1c618a
+        }
+
+        .mTit.svelte .theDate.svelte {
+            font-size: 12px;
+            color: #ccc
+        }
+
+        .inCardTags.svelte.svelte {
+            position: absolute;
+            display: flex;
+            top: 5px;
+            left: 5px
+        }
+
+        .inCardTags.svelte .theCountry.svelte {
+            color: #fff;
+            font-size: 12px;
+            margin-right: 5px;
+            background-color: #2785bd;
+            padding: 0 3px;
+            border-radius: 5px
+        }
+
+        .inCardTags.svelte .theClassify.svelte {
+            color: #fff;
+            font-size: 12px;
+            margin-right: 5px;
+            background-color: #e5a500;
+            padding: 0 3px;
+            border-radius: 5px
+        }
+
+        .theState.svelte.svelte {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            color: #ccc;
+            font-size: 12px;
+            line-height: 12px;
+            background-color: #4d4d4db3;
+            padding: 3px;
+            border-radius: 5px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">缪斯星✶官方</div>
+    <div class="container">
+        <div class="options">
+            <a href="/" class="option-btn">缪斯星首页</a>
+            <div class="vertical-divider"></div>
+            <a href="/animation" class="option-btn">缪斯星动漫</a>
+            <div class="vertical-divider"></div>
+            <a href="/movie" class="option-btn">缪斯星影视</a>
+            <div class="vertical-divider"></div>
+            <a href="https://video.musestar.cc/" class="option-btn">缪斯星搜索</a>
+            <div class="vertical-divider"></div>
+            <a href="/musestar" class="option-btn highlight">缪斯星官方</a>
+        </div>
+        <h1>视频</h1>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div style="text-align: center;">
+            <div class="cardMain svelte">
+                <a href="/teleplay/zmdy/2024">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/12/14/ebbf24e85f91282f8187dd768a28674b.png); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">中国</span> <span
+                                    class="theClassify svelte">跨年晚会</span></div>
+                            <div class="theState svelte"><span>2024最美的夜</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/zmdy/2024">2024最美的夜</a> 
+                <span class="theDate svelte">放送日期 2024,12,31</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/ASU/2024">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/12/14/35953ba149b8d29b1a8153d79838877e.jpg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">日本</span> <span
+                                    class="theClassify svelte">全息演唱会</span></div>
+                            <div class="theState svelte"><span>明透 1st ONE-MAN LIVE「RAY」</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/ASU/2024">明透 1st ONE-MAN LIVE「RAY」</a> 
+                <span class="theDate svelte">放送日期 2024,12,28</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/AnnualSummaryofPopularity/2024">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/12/14/b090e2584d1403a5f1a4dda1f77e955a.jpg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">中国</span> <span
+                                    class="theClassify svelte">热度总结</span></div>
+                            <div class="theState svelte"><span>2024热度年度总结</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/AnnualSummaryofPopularity/2024">2024热度年度总结</a> 
+                <span class="theDate svelte">放送日期 2024,12,14</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/KAF/2024">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/11/03/e1349db45e7c2bd056354116ede7f7d3.jpg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">日本</span> <span
+                                    class="theClassify svelte">全息演唱会</span></div>
+                            <div class="theState svelte"><span>花譜 4th ONE-MAN LIVE「怪歌（再）」</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/KAF/2024">花譜 4th ONE-MAN LIVE「怪歌（再）」</a> 
+                <span class="theDate svelte">放送日期 2024,11,3</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/VWP/2024">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/11/03/0b344e3e2a5dda2d0bc72c400a18c78f.jpg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">日本</span> <span
+                                    class="theClassify svelte">全息演唱会</span></div>
+                            <div class="theState svelte"><span>V.W.P 2nd ONE-MAN LIVE「現象Ⅱ （再）-魔女拡成-」</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/VWP/2024">V.W.P 2nd ONE-MAN LIVE「現象Ⅱ （再）」</a> 
+                <span class="theDate svelte">放送日期 2024,11,2</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/LTYWXGM2024">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/10/08/009311278d9e91751280590d6ce037cb.jpg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">中国</span> <span
+                                    class="theClassify svelte">全息演唱会</span></div>
+                            <div class="theState svelte"><span>洛天依「歌行宇宙·无限共鸣」</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/LTYWXGM2024">洛天依「歌行宇宙·无限共鸣」</a> 
+                <span class="theDate svelte">放送日期 2024,10,5</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/Sayuri">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/09/28/1a0219d4f91f6ed7611916405312da72.jpg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">日本</span> <span
+                                    class="theClassify svelte">晚安🕯</span></div>
+                            <div class="theState svelte"><span>仅以此视频悼念这位喜欢吉他的酸欠少女Sayuri</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/Sayuri">仅以此视频悼念这位喜欢吉他的酸欠少女Sayuri</a> 
+                <span class="theDate svelte">放送日期 2024,9,27</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/BHGH2024">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/09/15/fc0d5b23e477d9973dbc3898181baccf.png); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">中国</span> <span
+                                    class="theClassify svelte">虚拟演唱会</span></div>
+                            <div class="theState svelte"><span>冰火歌会2024漫游季</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/BHGH2024">冰火歌会2024漫游季</a> 
+                <span class="theDate svelte">放送日期 2024,9,15</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/BML2024/100">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/06/15/566f287884202f982c16618804792d65.jpeg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">中国</span> <span
+                                    class="theClassify svelte">综合演唱会</span></div>
+                            <div class="theState svelte"><span>BILIBILI MACRO LINK 2024</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/BML2024/100">BILIBILI MACRO LINK 2024</a> 
+                <span class="theDate svelte">放送日期 2024,7,13</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/TUBEOUT2024">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/07/28/65c2270b7b17a06eadf72cc5a5c9255e.jpeg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">中国</span> <span
+                                    class="theClassify svelte">虚拟演唱会</span></div>
+                            <div class="theState svelte"><span>TUBEOUT! 2024</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/TUBEOUT2024">TUBEOUT! 2024</a> 
+                <span class="theDate svelte">放送日期 2024,7,12</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/KAF/20241">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2024/11/05/150bafa7517c4a0566f52d3f4d313122.jpg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">日本</span> <span
+                                    class="theClassify svelte">全息演唱会</span></div>
+                            <div class="theState svelte"><span>花譜 4th ONE-MAN LIVE「怪歌」</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/KAF/20241">花譜 4th ONE-MAN LIVE「怪歌」</a> 
+                <span class="theDate svelte">放送日期 2024,1,14</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/AnnualSummaryofPopularity/2023">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2023/12/16/4da10d5a770fd52080aa6375d9ac9d09.jpeg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">中国</span> <span
+                                    class="theClassify svelte">热度总结</span></div>
+                            <div class="theState svelte"><span>2023热度年度总结</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/AnnualSummaryofPopularity/2023">2023热度年度总结</a> 
+                <span class="theDate svelte">放送日期 2023,12,15</span></div>
+            </div>
+            <div class="cardMain svelte">
+                <a href="/teleplay/BML2023/01">
+                    <div class="super svelte">
+                        <div class="mBox svelte"
+                            style="background-position: center center; background-image: url(https://s1.imagehub.cc/images/2023/11/03/f5fe54b0f1912636d3129f3cd8fe049e.jpeg); transform: translateZ(0px) rotateX(0deg) rotateY(0deg);">
+                            <div class="inCardTags svelte"><span class="theCountry svelte">中国</span> <span
+                                    class="theClassify svelte">综合演唱会</span></div>
+                            <div class="theState svelte"><span>BILIBILI MACRO LINK 2023</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="mTit svelte"><a class="theTitle svelte" href="/teleplay/BML2023/01">BILIBILI MACRO LINK 2023</a> 
+                <span class="theDate svelte">放送日期 2023,7,22</span></div>
+            </div>
+        </div>
+        <h1>网站发展详情</h1>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div class="info">
+            <p><strong>建站时间：</strong>2022年4月25日</p>
+            <p><strong>特别提醒：</strong>本站无任何盈利方式，第三方播放源内所有广告均与本站无关，如果您喜欢本站欢迎打赏，您的支持是缪斯星坚持下去的最大动力！未经本站授权禁止使用源文件链接、复制网页排版或建立镜像。
+            </p>
+            <p><strong>站语：</strong>𝐌𝐔𝐒𝐄𝐒𝐓𝐀𝐑缪斯星正在持续收集动漫番剧、电影、剧集等，给您免费播放网站中的最好体验！ฅ^≧ω≦^ฅ</p>
+            <br><a href="https://stats.uptimerobot.com/NJ9gBiMZ7D" class="option-btn">缪斯星服务状态</a>
+        </div>
+        <h2>发展时间线</h2>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年11月29日</h2>
+                    <p>缪斯星起始页start.musestar.cc正式上线
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年11月24日</h2>
+                    <p>缪斯星播放页V4页面评论区正式上线
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年9月8日</h2>
+                    <p>MUSEDT源正式上线
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月26日</h2>
+                    <p>缪斯星官方页面增加小更新线
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月25日</h2>
+                    <p>在未上映的可自动更新的MUSEOD源番剧中播放推荐视频
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月24日</h2>
+                    <p>缪斯星动漫MUSEOD源自动更新功能正式上线，首次在《败犬女主太多了！》-第八集中应用
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月23日</h2>
+                    <p>缪斯星官方页V3正式上线，增加发展时间线
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月22日</h2>
+                    <p>缪斯星播放页V4正式上线，首次在《通往夏天的隧道,再见的出口》中应用</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月13日</h2>
+                    <p>缪斯星服务状态stats.uptimerobot.com/NJ9gBiMZ7D正式上线</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月11日</h2>
+                    <p>全新缪斯星第三方搜索video.musestar.cc正式上线</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年3月</h2>
+                    <p>缪斯星动漫成为《憧憬成为魔法少女》搜索结果前三名</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2023年</h2>
+                    <p>缪斯星选片列表V3正式上线，V2改为索引页</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2023年12月16日</h2>
+                    <p>猫猫举牌访问统计正式上线</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2023年9月29日</h2>
+                    <p>缪斯星播放页V3正式上线，首次在《葬送的芙莉莲》-第一集中应用</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2023年2月17日</h2>
+                    <p>缪斯星域名更换为musestar.cc</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2022年</h2>
+                    <p>缪斯星播放页V2正式上线</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2022年</h2>
+                    <p>缪斯星选片列表V2正式上线</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2022年12月29日</h2>
+                    <p>缪斯星第三方搜索正式上线</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2022年10月30日</h2>
+                    <p>缪斯星正式加入萌备</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2022年7月</h2>
+                    <p>缪斯星影视正式上线</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2022年5月</h2>
+                    <p>缪斯星动漫因《间谍过家家》爆火，日访问量高达10000</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2022年4月25日</h2>
+                    <p>缪斯星动漫正式上线</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>温馨提示</h2>
+                    <p>因发展时间线添加过晚，部分事件已经记不清时间甚至已经忘记，私密马赛</p>
+                </div>
+            </div>
+        </div>
+        <h2>小更新线</h2>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年11月23日</h2>
+                    <p>缪斯星云存储、缪斯星云盘内测
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年11月2日</h2>
+                    <p>将部分视频移动到当前页
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年10月18日</h2>
+                    <p>改首页背景视频为图片
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年9月16日</h2>
+                    <p>修复MUSEOD源失效链接
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月27日</h2>
+                    <p>优化播放体验，删除播放器内缪斯星LOGO水印
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>2024年8月26日</h2>
+                    <p>优化手机端播放页V4体验
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2>赞助打赏</h2>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div class="zanzhudashang-area">
+            <div class="zanzhudashang-item">
+                <img src="https://s1.imagehub.cc/images/2024/06/07/6ce9c21015eab6ed9b495b55e79d05cc.jpeg" alt="微信支付">
+                <p>微信支付</p>
+            </div>
+            <div class="zanzhudashang-item">
+                <img src="https://s1.imagehub.cc/images/2024/06/07/bab12f334bd7a2b5d6db76664a37bd28.jpeg" alt="支付宝">
+                <p>支付宝</p>
+            </div>
+            <div class="zanzhudashang-item">
+                <a href="https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=azWBZtjkxoIKJMdnPEnG5nGjvEWS5naB">
+                    <img src="https://s1.imagehub.cc/images/2024/06/07/935658f74a3c87b7e1b30268ab741a2c.jpeg"
+                        alt="官方QQ交流群">
+                </a>
+                <p>官方QQ交流群</p>
+            </div>
+        </div>
+        <h2>评论区</h2>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div id="tcomment"></div>
+        <script src="https://data.musestar.cc/twikoo.js"></script>
+        <script>
+        twikoo.init({
+          envId: 'https://comments.musestar.cc', 
+          el: '#tcomment', 
+        })
+        </script>        
+        <div class="footer">
+            <img width="150" src="https://s1.imagehub.cc/images/2024/01/13/d0469ae970a9dac3b9e56aa223193e34.png"
+                alt="Footer Image">
+            <br>
+            <img width="350"
+                src="https://moe-counter.yumetsuki.moe/@musestar?name=musestar&theme=asoul&padding=10&offset=0&scale=1&pixelated=1&darkmode=auto"
+                alt="Visitor Counter">
+            <div class="divider">
+                <div class="divider-line"></div>
+                <div class="divider-inner"></div>
+                <div class="divider-line"></div>
+            </div>
+            <script type="text/javascript" src="/files/under.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

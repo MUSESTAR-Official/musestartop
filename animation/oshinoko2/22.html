@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇────────▇▇▇▇───────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───────────────▇▇▇▇▇▇▇▇▇
+▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇──────▇▇▇▇▇──────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───────────────▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇────▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇────▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇─────▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇─▇▇─▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇─────▇▇▇▇▇▇──▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──────▇▇▇▇───▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──▇───▇▇▇▇──▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──────────▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──▇────▇▇▇──▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──────────▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──▇▇───▇▇───▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──▇▇───▇▇──▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇─▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──▇▇▇──────▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇─▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──▇▇▇─────▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇─▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──▇▇▇▇────▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇──▇▇▇▇───▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇
+▇▇▇▇▇───▇▇▇▇▇──▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──────────────▇▇▇▇▇▇▇▇
+▇▇▇▇──────▇▇▇─▇▇▇────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────────────────▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇───────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──────────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────────────▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇────────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───────────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────────────▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇─────▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇──▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇────▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇────▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇──▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇──▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─▇▇▇▇▇▇──▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────────────▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──────────▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇──────▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇──▇▇─▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇────▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇─────────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇▇▇─────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────▇▇▇▇▇▇─────▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇────────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇────────▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇──────▇▇▇▇▇▇───────▇▇▇▇▇▇▇▇▇▇▇▇────────▇▇▇▇────▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇───▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+-->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Clarity tracking code for https://musestar.cc/ --><script>    (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "fvlvixulu7");</script>
+    <title>我推的孩子 第二季-第二十二集ฅ^≧ω≦^ฅ缪斯星动漫</title>
+    <link rel="icon" href="/favicon.ico" type="image/gif" sizes="16x16">
+    <meta name="keywords" content="我推的孩子 第二季,动漫,番剧,在线观看,高清,下载,缪斯星,MUSESTAR">
+    <meta name="description" content="当红爱豆“星野爱”未婚生子，产下一对双胞胎，妇科男医生和早逝女病人双双遇难，转生为自己的爱豆“星野爱”的孩子，三年后“星野爱”被害身亡，转生双胞胎寻找杀害母亲的真凶。。。">    
+    <style>
+        body {
+            background-image: url('https://s1.imagehub.cc/images/2024/08/22/83ac04dacb9b4d9a4c68403f2edf1de0.jpg');
+        }
+    </style>
+    <link href="/files/css/museplay.css" rel="stylesheet" type="text/css">
+    
+    <script src="/files/DPlayer.js"></script>
+</head>
+<body>
+    <div class="video-container">
+        <div id="dplayer"></div>
+    </div>
+    <div class="info-container">
+        <h1>我推的孩子 第二季-第二十二集</h1>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div class="options">
+            <a href="/" class="option-btn">缪斯星首页</a>
+            <div class="vertical-divider"></div>
+            <a href="/animation" class="option-btn highlight">缪斯星动漫</a>
+            <div class="vertical-divider"></div>
+            <a href="/movie" class="option-btn">缪斯星影视</a>
+            <div class="vertical-divider"></div>
+            <a href="https://video.musestar.cc/" class="option-btn">缪斯星搜索</a>
+            <div class="vertical-divider"></div>
+            <a href="/musestar" class="option-btn">缪斯星官方</a>
+        </div>
+        <div class="options">
+            <a href="#" class="option-btn highlight">本番剧已启用自动更新</a>
+            <a href="#" class="option-btn highlight">播放器右下角切换播放源</a>
+        </div>    
+        <h2>集数选择</h2>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div style="text-align: center;">
+            <p class="synopsis"><script type="text/javascript" src="/animation/files/oshinoko2.js"></script></p>
+        </div>
+        <div class="episode-selector">
+            <a href="https://video.musestar.cc/index.php/vod/search.html?wd=我推的孩子" class="episode-btn">第三方播放源</a>
+            <a href="/animation/oshinoko2/12" class="episode-btn">第12集</a>
+            <a href="/animation/oshinoko2/13" class="episode-btn">第13集</a>
+            <a href="/animation/oshinoko2/14" class="episode-btn">第14集</a>
+            <a href="/animation/oshinoko2/15" class="episode-btn">第15集</a>
+            <a href="/animation/oshinoko2/16" class="episode-btn">第16集</a>
+            <a href="/animation/oshinoko2/17" class="episode-btn">第17集</a>
+            <a href="/animation/oshinoko2/18" class="episode-btn">第18集</a>
+            <a href="/animation/oshinoko2/19" class="episode-btn">第19集</a>
+            <a href="/animation/oshinoko2/20" class="episode-btn">第20集</a>
+            <a href="/animation/oshinoko2/21" class="episode-btn">第21集</a>
+            <a href="/animation/oshinoko2/22" class="episode-btn">第22集</a>
+            <a href="/animation/oshinoko2/23" class="episode-btn">第23集</a>
+            <a href="/animation/oshinoko2/24" class="episode-btn">第24集</a>
+        </div>
+        <h2>动漫介绍</h2>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <p class="synopsis">当红爱豆“星野爱”未婚生子，产下一对双胞胎，妇科男医生和早逝女病人双双遇难，转生为自己的爱豆“星野爱”的孩子，三年后“星野爱”被害身亡，转生双胞胎寻找杀害母亲的真凶。。。</p>
+        <h2>本集下载</h2>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div class="download-container">
+            <p id="downloadLink" class="download-link">https://data.musestar.cc/onedrive/animation/我推的孩子/season%202/我推的孩子%20S02E22.mp4</p>
+            <button class="btn copy-btn" onclick="copyDownloadLink()">复制MUSEDT源下载链接</button>
+            <a href="https://data.musestar.cc/onedrive/animation/我推的孩子/season%202/我推的孩子%20S02E22.mp4" class="btn" download>直接下载MUSEDT源</a>
+        </div>
+        <div class="download-container">
+            <p id="downloadLink" class="download-link">https://my.microsoftpersonalcontent.com/personal/34ad44ca3c61e505/_layouts/15/download.aspx?share=EQXlYTzKRK0ggDRpDwAAAAABzGlbGRnXOosXTRzncfeXAQ&aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBZ1hsWVR6S1JLMDBubWtxelBFa1ZjR3hmRy1OP2U9S3ZDRmlC.muse4</p>
+            <button class="btn copy-btn" onclick="copyDownloadLink()">复制MUSEOD源下载链接</button>
+            <a href="https://my.microsoftpersonalcontent.com/personal/34ad44ca3c61e505/_layouts/15/download.aspx?share=EQXlYTzKRK0ggDRpDwAAAAABzGlbGRnXOosXTRzncfeXAQ&aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBZ1hsWVR6S1JLMDBubWtxelBFa1ZjR3hmRy1OP2U9S3ZDRmlC.muse4" class="btn" download>直接下载MUSEOD源</a>
+        </div>
+        <div class="magnet-container">
+            <p id="magnetLink" class="magnet-link">暂无</p>
+            <button class="btn copy-btn" onclick="copyMagnetLink()">复制磁力链接</button>
+            <a href="暂无" class="btn">磁力下载</a>
+        </div>
+        <h2>评论区</h2>
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-inner"></div>
+            <div class="divider-line"></div>
+        </div>
+        <div id="tcomment"></div>
+        <script src="https://data.musestar.cc/twikoo.js"></script>
+        <script>
+        twikoo.init({
+          envId: 'https://comments.musestar.cc', 
+          el: '#tcomment', 
+        })
+        </script>        
+        <div class="footer">
+            <img width="150" src="https://s1.imagehub.cc/images/2024/01/13/d0469ae970a9dac3b9e56aa223193e34.png" alt="Footer Image">
+            <br>
+            <img width="350" src="https://moe-counter.yumetsuki.moe/@musestar?name=musestar&theme=asoul&padding=10&offset=0&scale=1&pixelated=1&darkmode=auto" alt="Visitor Counter">
+            <div class="divider">
+                <div class="divider-line"></div>
+                <div class="divider-inner"></div>
+                <div class="divider-line"></div>
+            </div>
+            <script type="text/javascript" src="/files/under.js"></script>
+        </div>
+    </div>
+    <script>
+        var dp = new DPlayer({
+            container: document.getElementById('dplayer'),
+            airplay: true,
+            preload: 'auto',
+            logo: "",
+            autoplay: true,
+            volume: 1.0,
+            video: {
+                pic: 'https://s1.imagehub.cc/images/2024/08/12/20558017d6792d0a2a78a1659f66b6fa.jpg',
+                quality: [
+                    {
+                        name: 'MUSEOD源',
+                        url: "https://my.microsoftpersonalcontent.com/personal/34ad44ca3c61e505/_layouts/15/download.aspx?share=EQXlYTzKRK0ggDRpDwAAAAABzGlbGRnXOosXTRzncfeXAQ&aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBZ1hsWVR6S1JLMDBubWtxelBFa1ZjR3hmRy1OP2U9S3ZDRmlC.muse4",
+                    }, 
+                    {
+                        name: 'MUSEDT源',
+                        url: "https://data.musestar.cc/onedrive/animation/我推的孩子/season%202/我推的孩子%20S02E22.mp4",
+                    }, 
+                ],
+                defaultQuality: 0,
+            },
+        });
+    </script>
+     <script src="/files/js/museplaydownload.js"></script>
+</body>
+</html>
